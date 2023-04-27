@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS PaperSupply(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(64) UNIQUE NOT NULL,
+    count INT NOT NULL
+)
