@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS orders(
   order_id INT PRIMARY KEY AUTO_INCREMENT,
-  date DATE,
+  date DATE NOT NULL,
   amount FLOAT NOT NULL,
   method_id INT NOT NULL,
   cashier_id INT NOT NULL,

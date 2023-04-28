@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS employees(
     suffix TEXT NOT NULL,
     hire_date DATE NOT NULL
     gender enum('MALE', 'FEMALE') NOT NULL,
-    shift enum('AM', 'PM'),
+    shift enum('AM', 'PM') NOT NULL,
     job_id INT NOT NULL,
     Foreign Key job_id REFERENCES jobs(job_id),
 )
