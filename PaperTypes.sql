@@ -1,4 +1,5 @@
 CREATE TABLE IF NOT EXISTS PaperTypes(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name varchar(64) UNIQUE NOT NULL
+    name varchar(64) UNIQUE NOT NULL,
+    price INT NOT NULL
 )
