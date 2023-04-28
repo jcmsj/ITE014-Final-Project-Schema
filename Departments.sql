@@ -12,4 +12,4 @@ INSERT INTO departments(
 ('Information Technology'),
 ('Sales'),
 ('Human Resources'),
-('SUPPLIES')
+('Supplies')

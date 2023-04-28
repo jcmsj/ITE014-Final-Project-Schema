@@ -1,4 +1,0 @@
-CREATE TABLE IF NOT EXISTS locations(
-    location_id INT PRIMARY KEY AUTO_INCREMENT,
-    name TEXT NOT NULL
-)
