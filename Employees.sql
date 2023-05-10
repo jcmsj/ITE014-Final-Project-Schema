@@ -3,7 +3,7 @@ CREATE TABLE employees(
     first_name VARCHAR(255) NOT NULL,
     middle_name  VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
-    suffix VARCHAR(255) NULL,
+    suffix VARCHAR(255),
     hire_date DATE NOT NULL,
     gender VARCHAR2(6) CHECK(gender IN ('Male', 'Female')) NOT NULL,
     shift VARCHAR2(2) CHECK(shift IN ('AM', 'PM')) NOT NULL,
