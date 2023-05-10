@@ -1,8 +1,8 @@
 CREATE TABLE Branches(
     branch_id INT PRIMARY KEY,
     branch_name VARCHAR(255) UNIQUE,
-    contact_id INT NOT NULL
-    contact_id REFERENCES Contacts(contact_id)
+    contact_id INT NOT NULL,
+    FOREIGN KEY(contact_id) REFERENCES Contacts(contact_id)
 );
 INSERT INTO Branches
 VALUES(0, 'MANILA', 0);

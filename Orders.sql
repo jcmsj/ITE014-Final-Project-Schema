@@ -1,4 +1,3 @@
-
 CREATE TABLE Orders(
   order_id INT PRIMARY KEY,
   order_date DATE NOT NULL,
@@ -8,11 +7,11 @@ CREATE TABLE Orders(
   papers_used INT NOT NULL,
   ink_id INT NOT NULL,
   delivery_id INT NOT NULL,
-  Foreign Key(cashier_id) REFERENCES employees(employee_id),
-  Foreign Key(method_id) REFERENCES PaymentMethods(method_id),
-  Foreign Key(paper_id) REFERENCES PaperTypes(paper_id),
-  Foreign Key(ink_id) REFERENCES  InkTypes(ink_id),
-  Foreign Key(delivery_id) REFERENCES  contacts(contact_id)
+  FOREIGN KEY(cashier_id) REFERENCES Employees(employee_id),
+  FOREIGN KEY(method_id) REFERENCES PaymentMethods(method_id),
+  FOREIGN KEY(paper_id) REFERENCES PaperTypes(paper_id),
+  FOREIGN KEY(ink_id) REFERENCES  InkTypes(ink_id),
+  FOREIGN KEY(delivery_id) REFERENCES  Contacts(contact_id)
 );
 
 INSERT INTO orders
