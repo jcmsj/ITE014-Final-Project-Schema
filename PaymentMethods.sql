@@ -1,4 +1,24 @@
-CREATE TABLE IF NOT EXISTS PaymentMethods(
+CREATE TABLE PaymentMethods(
     method_id varchar(64) PRIMARY KEY,
     name varchar(64) NOT NULL
-)
+);
+INSERT INTO PaymentMethods
+VALUES('CASH', 'CASH');
+INSERT INTO PaymentMethods
+VALUES('GCASH', 'GCASH');
+INSERT INTO PaymentMethods
+VALUES('MAYA', 'MAYA');
+INSERT INTO PaymentMethods
+VALUES('UNI', 'UNION BANK');
+INSERT INTO PaymentMethods
+VALUES('MET', 'METRO BANK');
+INSERT INTO PaymentMethods
+VALUES('BDO', 'BANKO DE ORO');
+INSERT INTO PaymentMethods
+VALUES('EW', 'EASTWEST BANK');
+INSERT INTO PaymentMethods
+VALUES('LB', 'LAND BANK OF THE PHILIPPINES');
+INSERT INTO PaymentMethods
+VALUES('SEC', 'SECURITY BANK');
+INSERT INTO PaymentMethods
+VALUES('CH', 'CHINA BANK');

@@ -1,6 +1,14 @@
-CREATE TABLE IF NOT EXISTS Branches(
-    branch_id INT PRIMARY KEY AUTO_INCREMENT,
-    branch_name UNIQUE TEXT NOT NULL,
-    address UNIQUE TEXT NOT NULL,
-    contact_id INT NOT NULL,
-)
+CREATE TABLE Branches(
+    branch_id INT PRIMARY KEY,
+    branch_name VARCHAR(255) UNIQUE,
+    contact_id INT NOT NULL
+    contact_id REFERENCES Contacts(contact_id)
+);
+INSERT INTO Branches
+VALUES(0, 'MANILA', 0);
+INSERT INTO Branches
+VALUES(1, 'CUBAO', 1);
+INSERT INTO Branches
+VALUES(2, 'NORTH EDSA', 2);
+INSERT INTO Branches
+VALUES(3, 'DAVAO', 3);

@@ -1,24 +1,28 @@
-CREATE TABLE IF NOT EXISTS Jobs(
+CREATE TABLE Jobs(
     job_id VARCHAR(64) PRIMARY KEY,
-    title TEXT NOT NULL,
-    wage INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    wage INT NOT NULL
 );
-INSERT INTO Jobs(
-    job_id,
-    title,
-    salary
-) VALUES(
-    'CEO',
-    'CEO',
-    5000,
-),
-(
-    'SEC_GUARD',
-    'SECURITY GUARD',
-    1500,
-),
-(
-    'SEC_CCTV',
-    'CCTV handler',
-    1300,
-)
+
+INSERT INTO Jobs 
+VALUES('CEO','CEO',50000);
+INSERT INTO Jobs
+VALUES('IT_BRANCH', 'Branch Manager', 30000);
+INSERT INTO Jobs 
+VALUES('SEC_GUARD', 'SECURITY GUARD', 17000);
+INSERT INTO Jobs
+VALUES('SEC_CCTV','CCTV Operator',18000);
+INSERT INTO Jobs
+VALUES('IT_CCTV','CCTV Technician',15000);
+INSERT INTO Jobs
+VALUES('IT_TECH','IT Technician',20000);
+INSERT INTO Jobs
+VALUES('PR_MAN', 'PRESSMAN', 17000);
+INSERT INTO Jobs
+VALUES('PR_CASH', 'CASHIER', 16000);
+INSERT INTO Jobs
+VALUES('PR_COUR', 'COURIER', 16000);
+INSERT INTO Jobs
+VALUES('IT_PAPER', 'Paper Supply Manager', 15000);
+INSERT INTO Jobs
+VALUES('IT_INK', 'Ink Supply Manager', 15000);
